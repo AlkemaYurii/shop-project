@@ -44,15 +44,15 @@ body {
 .col-12 {
     width: 100%;
 }
-.menu li {
+.menu > li {
     float: left;
     width: 25%;
     border-left: 1px solid #2c71b8;
 }
-.menu li:last-child {
+.menu > li:last-child {
     border-right: 1px solid #2c71b8;
 }
-.menu a {
+.menu > li > a {
     display: block;
     height: 50px;
     text-align: center;
@@ -61,7 +61,7 @@ body {
     color:#2c71b8;
     font-size: 21px;
 }
-.menu a:hover {
+.menu > li > a:hover {
     background-color:#2c71b8;
     color: white;
 }
