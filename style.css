@@ -41,11 +41,15 @@ body {
 .col-6 {
     width: 50%;
 }
+.col-9 {
+    width: 75%;
+}
 .col-12 {
     width: 100%;
 }
 .menu > li {
     float: left;
+    position: relative;
     width: 25%;
     border-left: 1px solid #2c71b8;
 }
@@ -65,3 +69,104 @@ body {
     background-color:#2c71b8;
     color: white;
 }
+.submenu {
+    display:none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 200%;
+}
+.submenu > li {
+    height: 40px;
+    line-height: 40px;
+    background-color:#2c71b8;
+}
+.submenu > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+} 
+.submenu > li:hover{
+    background-color:white;
+}
+.submenu > li:hover a{
+    color: #2c71b8;
+}
+.submenu > li:first-child {
+    padding-top: 15px;
+    height: 55px;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+.menu li:hover .prod:after {
+    background: url(images/arrow_down_white.png);
+}
+.prod {
+    position: relative;
+}
+.prod:after {
+    position: absolute;
+    left: 85%;
+    bottom: 40%;
+    content: "";
+    display: block;
+    height: 8px;
+    width: 8px;
+    background: url(images/arrow_down_blue.png) center no-repeat;
+}
+.search {
+    height: 40px;
+    width: 200px;
+    border: 1px solid #2c71b8;
+    padding: 4px;
+}
+.search-field {
+    padding: 0;
+    width: 156px;
+    height:30px;
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    font-weight: 100;
+    color: #2c71b8;
+}
+.search-field:focus {
+    border: none;
+    outline: none;
+}
+.search-click {
+    padding: 0;
+    background-image: url(images/search.jpg);
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+::-webkit-input-placeholder {
+    font-size: 21px;
+    font-weight: 100;
+    color: #2c71b8;
+  }
+  .cart {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: url(images/basket.png) center no-repeat;
+      background-color: white;
+  }
+  .product-count {
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      font-weight: 300;
+      background-color: #2c71b8;
+      color: white;
+      border: 0px solid transparent;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 20px;
+      position: absolute;
+      top:-12px;
+      left:-12px;
+  }
