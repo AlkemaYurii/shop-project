@@ -53,6 +53,15 @@ body {
 .col-12 {
     width: 100%;
 }
+.logo > a {
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+.logo > a > img {
+    vertical-align: middle;
+}
 .menu > li {
     float: left;
     position: relative;
