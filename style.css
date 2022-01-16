@@ -293,7 +293,8 @@ body {
     background: url(images/zoom_white.png) center no-repeat #2c71b8;
 }
 
-.like:hover {
+.like:hover, .liked {
+    cursor: pointer;
     background: url(images/like_white.png) center no-repeat #2c71b8;
 }
 
@@ -451,4 +452,62 @@ input[type="checkbox"] {
 .btn-filter:hover {
     color: #2c71b8;
     background-color: white;
+}
+.load-more-product {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.load-more {
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px 0;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 21px;
+    color: #2c71b8;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.modal-block {
+    width: 300px;
+    margin: 80px auto;
+    height: 200px;
+    background-color: #fff;
+    border:1px solid grey;
+    padding: 15px;
+
+}
+.form-field {
+    margin: 10px 0;
+}
+.form-field  input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+.btn-close {
+    text-align: right;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
